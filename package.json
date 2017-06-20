@@ -1,0 +1,17 @@
+{
+  "name": "react-php-base",
+  "version": "0.0.1",
+  "description": "ReactJS + PHP API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "js",
+    "php",
+    "api"
+  ],
+  "author": "Ankith Konda",
+  "license": "MIT"
+}
