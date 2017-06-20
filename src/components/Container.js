@@ -1,3 +1,4 @@
+import '../stylesheets/Container.scss'
 
 import React from "react"
 
@@ -38,16 +39,16 @@ export default class Container extends React.Component {
 
 
         return (
-        <div className="container-component">
+        <div className="container-component clearfix">
             <h1>{this.state.input_val}</h1>
 
-                <input 
-                    type="text" 
-                    class="form-input" 
-                    id="usr"
-                    value={this.state.input_val}
-                    onChange={this.handleInputOnChange}
-                />
+            <input 
+                type="text" 
+                class="form-input" 
+                id="usr"
+                value={this.state.input_val}
+                onChange={this.handleInputOnChange}
+            />
 
         </div>);
     }
