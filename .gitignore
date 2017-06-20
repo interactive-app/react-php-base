@@ -2,3 +2,4 @@
 node_modules/*
 .vscode/*
 public/config.php
+public/build
