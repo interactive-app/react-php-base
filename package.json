@@ -13,8 +13,16 @@
     "php",
     "api"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ankithkonda/react-php-base.git"
+  },
   "author": "Ankith Konda",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ankithkonda/react-php-base/issues"
+  },
+  "homepage": "https://github.com/ankithkonda/react-php-base#readme",
   "devDependencies": {
     "autoprefixer-loader": "^3.2.0",
     "babel-cli": "^6.24.0",
