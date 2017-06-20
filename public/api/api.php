@@ -58,7 +58,7 @@ class MyApi
         
 		switch($this->request->action){
 			case "hello":
-				$this->hello();
+				$this->hello($this->request->data);
 				break;
 			default:
 				$this->reply("action switch failed",400);
@@ -70,7 +70,8 @@ class MyApi
 	}
 
     public function hello(){
-		$this->reply('Hello from the API!');
+		$data = json_decode($this->request->data);
+		$this->reply("Hello ".$data->name.", I'm PHP :)");
 	}
 
 	/**
@@ -137,6 +138,6 @@ if(isset($config['use_db']) && $config['use_db']) {
 	Db::config( 'password', $config['db']['password'] );
 }
 
-$db = Db::instance();
+$db = null; //Db::instance(); //uncomment and enter db details in config to use database
 $MyApi = new MyApi($db, $config);
 
