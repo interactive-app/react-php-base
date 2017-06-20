@@ -160,11 +160,8 @@ class Lti {
 			'launch_presentation_locale' => 'en',
 			'oauth_timestamp' => '1495495665',
 			'oauth_callback' => 'about:blank',
-			'custom_tags'=>'true',
-			'custom_filter_strict'=>'false',
-			//custom variables will be in the array as follows
-            'custom_lti_variable_B'=>'New Value for Variable B',
-            'custom_lti_variable_D'=>'8'
+			'custom_variable_by_user_bool'=>'true',
+			'custom_variable_by_user_string'=>"woo hoo i have LTI support"
 		);
 	}
 
