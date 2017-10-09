@@ -44,7 +44,7 @@ module.exports = {
                 exclude: /(node_modules)/,
                 loader: "babel-loader",
                 query: {
-                  presets: ["latest", "stage-0", "react"],
+                  presets: ["env", "stage-0", "react"],
                   plugins: ["react-html-attrs", "transform-class-properties", "transform-decorators-legacy"]
                 }
             },
@@ -56,7 +56,7 @@ module.exports = {
             {
                 test: /\.scss$/,
                 exclude: /(node_modules)/,
-                loader:"style-loader!css-loader!autoprefixer-loader!sass-loader"
+                loader:"style-loader!css-loader!sass-loader"
             },
             {
                 test: /\.css$/,

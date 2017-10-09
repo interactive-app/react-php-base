@@ -1,15 +1,13 @@
-import 'bootstrap/dist/css/bootstrap.css'
-
 import React from "react"
 import ReactDOM from "react-dom"
 
-import Container from "./components/Container"
+import App from "./Components/App"
 
-const app = document.getElementById('app');
+const appContainer = document.getElementById('app');
 let state = {
     input_val:"Welcome to React App with PHP API",
     api_message:"",
 }
-ReactDOM.render(<Container appState={state}/>, app);
+ReactDOM.render(<App appState={state}/>, appContainer);
 
 
