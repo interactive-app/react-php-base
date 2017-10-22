@@ -31,7 +31,7 @@ export default class App extends React.Component {
         
     }
     componentDidMount(){
-        console.log("Layout component did mount");
+        console.log("Layout component did mount d");
         
         axios.get('../public/api/api.php', {
             params: {
@@ -66,7 +66,7 @@ export default class App extends React.Component {
 
         let LTI_Message = "Oh No LTI is not valid"
         if($LTI_is_valid){
-            LTI_Message = <span>{"LTI is valid and a custom LTI varible is now available in the gloabal scope - "+$LTI_custom_variable_by_user_string}</span>;
+            LTI_Message = <span>{"LTI is valid and a custom LTI xezw varible is now available in the gloabal scope - "+$LTI_custom_variable_by_user_string}</span>;
         }
 
 
